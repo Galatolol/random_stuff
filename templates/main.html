@@ -1,0 +1,36 @@
+{% include "common/header.html" %}
+
+<body>
+    {% include "common/banner.html" %}
+
+    {% if error %}
+        <div class="alert alert-warning">
+            <strong>Error:</strong> {{ error }}
+        </div>
+    {% endif %}
+
+    {% if success %}
+        <div class="alert alert-success">
+            {{ success }}
+        </div>
+    {% endif %}
+
+    <div class="container">
+    <div class="row">
+    <div class="col-xs-12 col-md-12">
+
+        <form class="form-horizontal" method="POST">  
+        <div class="form-group">
+            <label class="control-label" for="for_ex_draw_certs_submit">For-Ex</label><br>
+            <div class="btn-group">
+                <input name="for_ex_draw_certs_submit" id="for_ex_draw_certs_submit" class="btn btn-primary" value="Draw Certificates" type="submit">
+            </div>
+        </div>
+        </form>
+    </div>
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
