@@ -26,7 +26,7 @@ def increase_cert_nb(currency):
 
 
 def write_result():
-	res = "Starting Certificates: "
+	res = "Starting certificates: "
 	for key, value in certs.items():
 		if value == 0:
 			continue
